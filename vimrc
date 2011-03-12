@@ -4,10 +4,15 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 
-"Enabled auto-indenting
+" Enabled auto-indenting
 set autoindent
 set smartindent
 filetype plugin indent on
+
+" Disable autoident so can past without breaking syntax
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 " Automatically set current directory to file's location
 set autochdir
