@@ -19,11 +19,10 @@ def detail(request, poll_id):
                              {'poll':poll},
                              context_instance=RequestContext(request)
                             )
-"""
 def results(request, poll_id):
   poll = get_object_or_404(Poll, pk=poll_id)
   return render_to_response('polls/results.html', {'poll' : poll})
-
+"""
 def vote(request, poll_id):
   poll = get_object_or_404(Poll, pk=poll_id)
 
