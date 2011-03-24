@@ -103,4 +103,6 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     # Django tutorial modules
     'polls',
+    # Core modules
+    'users' # Manige users
 )
