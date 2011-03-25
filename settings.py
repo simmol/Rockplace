@@ -104,5 +104,6 @@ INSTALLED_APPS = (
     # Django tutorial modules
     'polls',
     # Core modules
-    'users' # Manige users
+    'band',  # Band related stuff
+    'users', # Manage users
 )
