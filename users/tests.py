@@ -16,17 +16,23 @@ class SimpleTest(TestCase):
         self.failUnlessEqual(1 + 1, 2)
 
 class UserTest(TestCase):
-  
+
   def setUp(self):
-    self.user = new User()
+    self.user = User
     self.user.username = 'testuser'
     self.user.facebook_id = 'test_facebook_id'
 
   def testRegistration(self):
-    self.assert('Registration not implemented')
+    flag = True
+    try:
+       User.registration()
+    except AttributeError:
+      flag = False
+
+    self.assertTrue( flag, 'Registration implemented')
 
   def testLogin(self):
-    self.assert('Login not implemented')
+    self.assertTrue(0, 'Login not implemented')
 
   def testUserModel(self):
     self.assertEqual(self.user.username, 'testuser')
