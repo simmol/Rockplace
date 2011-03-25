@@ -1,0 +1,11 @@
+# Ignore all precompile python files
+*.pyc
+
+# Ignore backup files
+*swp
+*~
+
+# Ignore editor/IDE files/folders - Should be updated for all used editors
+# PIDA
+.pida-metadata
+*.pidaproject
